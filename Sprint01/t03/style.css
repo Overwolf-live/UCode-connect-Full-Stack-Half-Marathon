@@ -1,0 +1,72 @@
+.menu-header {
+  width: 100vw;
+  background: red;
+  line-height: 2em;
+  color: white;
+}
+
+* {
+  list-style: none;
+  text-align: center;
+}
+
+.top-menu {
+  margin: 0 auto;
+}
+
+.first-form {
+  display: inline-block;
+  position: relative;
+  width: 10em;
+  background: gray;
+  margin: 20px;
+}
+
+.submenu-down {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.submenu-down > li {
+  width: 10em;
+  position: relative;
+  left: -60px;
+  margin: 2px 20px 2px 20px;
+  background: grey;
+}
+
+.submenu-down > li > ul > li {
+  width: 10em;
+  position: relative;
+  left: 110px;
+  top: -20px;
+  margin: 2px 20px 2px 20px;
+  background: grey;
+}
+
+.first-form:hover {
+  background: red;
+}  
+
+.first-form:hover > .submenu-down {
+  visibility: visible;
+  position: absolute;
+  opacity: 1;
+}
+
+.first-form:hover > .submenu-down ul {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+
+.submenu-down > .brotherhood:hover > .submenu-brotherhood {
+  visibility: visible;
+  opacity: 1;
+}
+
+.submenu-down > .frontend:hover > .submenu-frontend {
+  visibility: visible;
+  opacity: 1;
+}
