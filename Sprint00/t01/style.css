@@ -1,0 +1,32 @@
+img {
+    border-radius: 20px;
+}
+td {
+    border: 2px solid #e0e0e0;
+    padding: 10px;
+}
+h1 {
+    text-align: left;
+}
+#Header {
+    background-color: black;
+    color: white;
+}
+#Soul {
+    background-color: #db851b;
+}
+#Time {
+    background-color: #3a7d21;
+}
+#Space {
+    background-color: #005892;
+}
+#Mind {
+    background-color: #ffff03;
+}
+#Reality {
+    background-color: #c12a2f;
+}
+#Power {
+    background-color: #8175b7;
+}
