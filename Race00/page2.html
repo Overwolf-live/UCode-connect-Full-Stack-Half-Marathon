@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style2.css">
+  <script src="js/script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <title>Calculator</title>
+</head>
+
+<body>
+  <button id="button"><a href="index.html" class="key--operator">NSFW</a></button>
+  <h1 align="center">Nyaculator^^</h1>
+  <div class="toghether">
+    <div class="container">
+      <div class="calculator">
+        <div class="top">
+                <select id="numeralSystem" onchange="systemSwitcher(value)">
+                    <option value="decimal" selected>Decimal</option>
+                    <option value="binary">Binary</option>
+                    <option value="hex">Hex</option>
+                </select>
+                <span id="latestValue"></span>
+            </div>
+        <div class="calculator__display">0</div>
+        <div class="calculator__keys">
+          <button class="key--operator" data-action="root" style="background: #f765b8; color: white">√</button>
+          <button data-action="percent" style="background: #f765b8; color: white">%</button>
+          <button class="key--operator" data-action="sign" style="background: #f765b8; color: white">+/-</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="divide">/</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="factorial">x!</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="pow">xy</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="second">x2</button>
+          <button class="key--operator " style="background: #f765b8; color: white; font-size: 10px" data-action="round">round</button>
+
+          
+          <button class="key--operator" data-action="ms">MS</button>
+          <button class="key--operator" data-action="mr">MR</button>
+          <button class="key--operator" data-action="mc">MC</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="m+">M+</button>
+
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="multiply">&times;
+          </button>
+          <br>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="subtract">-</button>
+          <br>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="key--operator" style="background: #f765b8; color: white" data-action="add">+</button>
+          <br>
+          <button>0</button>
+          <button data-action="decimal">.</button>
+          <button class="key--equal" data-action="calculate">=</button>
+          <button data-action="clear" style="background: red">AC</button>
+        </div>
+      </div>
+        <div class="calculator">
+          <div class="converter-wrapper">
+            <h1>Converter</h1>
+
+            <form name="property_form">
+              <span>
+      <select class="select-property" name="the_menu" size=1 onChange="UpdateUnitMenu(this, document.form_A.unit_menu); UpdateUnitMenu(this, document.form_B.unit_menu)">
+      </select>
+    </span>
+            </form>
+
+            <div class="converter-side-a">
+              <form name="form_A" onSubmit="return false">
+                <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onKeyUp="CalculateUnit(document.form_A, document.form_B)">
+                <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_B, document.form_A)">
+        </select>
+      </span>
+              </form>
+            </div><br>
+            <br>
+            <div class="converter-equals">
+            </div>
+            <div class="converter-side-b">
+              <form name="form_B" onSubmit="return false">
+                <input type="text" class="numbersonly" name="unit_input" maxlength="20" value="0" onkeyup="CalculateUnit(document.form_B, document.form_A)">
+                <span>
+        <select name="unit_menu" onChange="CalculateUnit(document.form_A, document.form_B)">
+        </select>
+      </span>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+body {
+    background-color: white;
+    background-size: 100%;
+}
+
+h1 {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2%;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.pressed {
+    background-color: #27fdf5;
+}
+
+.container {
+    width: 250px;
+    height: 800px;
+    padding: 4px;
+    margin: 80px auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    background: linear-gradient(#4389A2, #5C258D);
+    border-radius: 10px;
+}
+
+.calculator {
+
+    width: 14em;
+    height: auto;
+    margin: 1em auto;
+}
+
+.calculator__display {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    text-align: right;
+    font-weight: 600;
+    padding: 15px;
+    margin: 30px 0 20px 0;
+    background-color: white;
+    color: black;
+}
+
+.calculator__keys button,
+.top button.clear {
+    float: left;
+    cursor: pointer;
+    width: 4em;
+    height: 4em;
+    line-height: 3em;
+    color: black;
+    text-align: center;
+    user-select: none;
+    transition: background-color .2s ease;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.calculator__keys button.operator {
+    background: rgba(255, 255, 255, 0.2);
+    border-right: 0;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.calculator__keys button.equals {
+    color: #888e5f;
+}
+
+.calculator__keys button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: #FFF;
+}
+
+.top button.clear:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #FFF;
+}
+
+button:active {}
+
+.converter-wrapper {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.converter-wrapper input {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    width: 70%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.converter-wrapper span select {
+    background-color: black;
+    color: #fff;
+    font-size: inherit;
+    padding: 10px;
+    width: 70%;
+    border: 0;
+    margin: 0;
+    border-radius: 0px;
+    text-indent: 0.01px;
+    text-overflow: '';
+    -webkit-appearance: none;
+    /* hide default arrow in chrome OSX */
+}
